@@ -1,0 +1,28 @@
+*
+{
+  box-sizing: border-box;
+}
+
+#feedbackmsg
+{
+  display: none;
+  /* border: 3px solid black; */
+}
+
+.btn
+{
+  background-color: #90C2E7;
+  color: white;
+
+  border-radius: 12%;
+  border: 3px solid #9C795F;
+
+  padding: 14px 16px;
+
+  transition-duration: 0.7s;
+}
+
+.btn:hover
+{
+  opacity: 0.5;
+}

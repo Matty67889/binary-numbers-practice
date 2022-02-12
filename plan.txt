@@ -1,0 +1,12 @@
+Make a question for asking the user to convert a decimal number to binary
+- Generate a random decimal number
+- Check the user's input
+  - If the user types a string, give a message that it is not a valid input.
+  - If the user types a number that is not a valid binary number, give a
+    message that the number is not a valid binary number
+  - If the user types a binary number, make a binary number object with the
+    user's input, and convert it to decimal.
+      - If the converted number is the same as the number randomly generated,
+        the user's answer is correct.
+      - If the converted number is not the same as the number randomly
+        generated, the user's answer is incorrect.

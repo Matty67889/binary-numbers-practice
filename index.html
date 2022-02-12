@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name = "viewport" content = "width=device-width, initial-scale = 1.0">
+
+    <title>Binary Number Practice</title>
+    <style></style>
+    <!-- Main StyleSheet -->
+    <link rel = "stylesheet" href = "resources/css/index.css" />
+
+    <script></script>
+    <!-- General Functions -->
+    <script src = "resources/js/script.js"></script>
+    <script src = "vendors/js/utilities.js"></script>
+
+    <!-- JavaScript Classes -->
+    <script src = "resources/js/BinaryNumber.js"></script>
+  </head>
+
+  <body onload = "initialize();">
+    <!-- 1st question -->
+    <form>
+      <label for = "q1rangeInput">
+        Maximum number of bits (max of 15):
+      </label>
+      <input id = "q1rangeInput" type = "number" min = "2" max = "15" placeholder = "Maximum number..." />
+      
+      <p class = "question">
+        Convert <span id = "binnumber"></span> to decimal.
+      </p>
+
+      <!-- Answer Space -->
+      <label for = "q1ansInput">
+        Answer:
+      </label>
+      <input id = "q1ansInput" placeholder = "Your answer here..." />
+
+      <!-- Interaction Buttons -->
+      <button class = "btn submitbtn" type = "button" onclick = "checkAnswer();">
+        Submit
+      </button>
+      <button class = "btn newNumBtn" type = "button" onclick = "generateNewBinNum();">
+        New Number
+      </button>
+
+      <!-- Feedback space -->
+      <p id = "q1feedbackmsg"></p>
+    </form>
+
+    <!-- 2nd question -->
+    <form>
+      <label for = "q2rangeInput">
+        Maximum decimal number (default 10, max of 10000):
+      </label>
+      <input id = "q2rangeInput" value = "10" type = "number" min = "0" max = "10000" placeholder = "Maximum number..." />
+
+      <p class = "question">
+        Convert <span id = "decinumber"></span> to binary.
+      </p>
+
+      <!-- Answer Space -->
+      <label for = "q2ansInput">
+        Answer:
+      </label>
+      <input id = "q2ansInput" placeholder = "Your answer here..." />
+
+      <!-- Interaction Buttons -->
+      <button class = "btn submitbtn" type = "button" onclick = "checkQ2();">
+        Submit
+      </button>
+      <button class = "btn newNumBtn" type = "button" onclick = "generateNewDeciNum();">
+        New Number
+      </button>
+
+      <!-- Feedback space -->
+      <p id = "q2feedbackmsg"></p>
+    </form>
+  </body>
+</html>
